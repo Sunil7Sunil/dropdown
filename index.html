@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title> DROPDOWN </title>
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .body{
+        font-family: sans-serif;
+      }
+      .menu_bar{
+        background-color: rgb(208, 79, 10);
+        height: 90px;
+        width: 1093px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 5%;
+      }
+      .logo{
+        color: white;
+        font-size: 30px;
+      }
+      .logo span{
+        color: blue;
+      }
+      .menu_bar ul{
+        list-style: none;
+        display: flex;
+        position: relative;
+      }
+      .menu_bar ul li{
+        padding: 20px;
+      }
+      .menu_bar ul li a{
+        color: white;
+        text-decoration: none;
+        font-size: 15px;
+        transition: all 0,3s;
+      }
+      .menu_bar ul li a:hover{
+        color: blue;
+      }
+      .dropdown_menu{
+        display: none;
+      }
+      .menu_bar ul li:hover .dropdown_menu{
+        display: block;
+        position: absolute;
+        left: 180px;
+        top: 100%;
+        background-color:  rgb(208, 79, 10);
+      }
+      .menu_bar ul li:hover .dropdown_menu ul{
+        display: block;
+        margin: 20px;
+      }
+      .menu_bar ul li:hover .dropdown_menu ul li {
+        width: 100px;
+        padding: 10px;
+      }
+      .fas {
+        float: right;
+        margin-left: 10px;
+        padding-top: 3px;
+      }
+      .dropdown_menu-1{
+      display: none;
+      }
+      .dropdown_menu ul li:hover .dropdown_menu-1{
+        display: block;
+        position: absolute;
+        top: 140px;
+        left: 120px;
+        background-color:  rgb(208, 79, 10);
+      }
+      .hero {
+        height: calc(100vh - 90px);
+        background-image: url(https://www.itl.cat/pngfile/big/302-3025194_landscape-hd-wallpaper-motivational-quotes.jpg);
+      }
+      .hero-1 {
+        text-align: center;
+        font-size: 40px;
+        color:  rgb(208, 79, 10);
+        font-style: italic;
+        
+      }
+     
+     </style>
+</head>
+<body>
+   <div class="menu_bar">
+    <h1 class="logo">HTML<span>CODE.</span></h1>
+   <ul>
+    <li><a href="#">HOME</a></li>
+    <li><a href="#">ABOUT</a></li>
+    <li>
+        <a href="#">CONTACT<i class="fas fa-caret-down"></i></a>
+        <div class="dropdown_menu">
+            <ul>
+                <li><a href="#">6203380073</a></li>
+                <li><a href="#">9341742804</a></li>
+                <li><a href="#">6203380073</a></li>
+                <li><a href="#">9341742804 </a></li>
+                <li><a href="#">MORE<i class="fas fa-caret-right"></i></a>
+                    <div class="dropdown_menu-1">
+                        <ul>
+                            <li><a href="#">7081655289</a></li>
+                            <li><a href="#">6299248561</a></li>
+                            <li><a href="#">7081655289</a></li>
+                            <li><a href="#">6299248561</a></li>
+                        </ul>
+                    </div>
+                </li>
+               
+            </ul>
+        </div>
+    </li>
+
+
+    <li><a href="#">YOUTUBE</a></li>
+    <li><a href="#">FEEDBACK</a></li>
+   </ul>
+   </div>
+   <section class="hero">
+    <div class="hero-1">
+        <h1>WELCOME</h1>
+        </div>
+    &nbsp;
+   </section>
+  
+</body>
+</html>
